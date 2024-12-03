@@ -25,3 +25,18 @@ jobs:
         with:
           node-version: 21.x
 
+      # Install dependencies
+      - name: 🧰 Install Deps
+        run: npm install
+        
+      # Run lint
+      - name: Run Lint
+        run: npm run lint
+
+      # Run build
+      - name: Run Build
+        run: npm run build
+
+      # Run lint
+      - name: Run Test
+        run: npm run test
